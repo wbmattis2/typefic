@@ -1,4 +1,11 @@
-const sampleBook = {
+/*
+TypeFic sample book
+Designed and developed by Benny Mattis.
+*/
+
+import {book, state} from './TypeFic';
+
+const sampleBook: book = {
   bookChapters: {
     'beginningChapter': {
       chapterPages: [
@@ -28,7 +35,7 @@ const sampleBook = {
       chapterPages: [
         'This is the middle. ',
         'A lot of action usually happens here. ',
-        () => {return 'Maybe even a turning point.';},
+        (currentState: state) => {return 'Maybe even a turning point at page ' + currentState.currentPageIndex + '.';},
         'However,\n',
         'This story doesn\'t have a plot!'
       ],
