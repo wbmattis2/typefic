@@ -19,4 +19,4 @@ bookChapters should be an object, each key of which is the name of a chapter in 
 
 chapterEndingChoices is another nested object. Keys are strings to be displayed as options for the user to select. Corresponding values should be functions changing the game's state to start a new chapter.
 
-Browserify was used to bundle the web ui script. Special thanks to Advanced Web Machinery for showing me how to do this: [https://advancedweb.hu/getting-started-with-browserify/]
+Browserify was used to bundle the web ui script into bundle.js (included index.html). Special thanks to Advanced Web Machinery for showing me how to do this: [https://advancedweb.hu/getting-started-with-browserify/]
