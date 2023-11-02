@@ -26,9 +26,10 @@ If it is used, the value of `bookVariables` should be another object mapping all
 
 ### Reading your Book with TypeFic  
 
-Examples on how to read your book are included in node_ui and web_ui files.  
+As with any TypeScript project, files must be transpiled into JavaScript for use in Node or the browser; browser programs spanning multiple files should also be bundled into a single script with something like Browserify.
 
-Create a new TypeFic object of type `startingInputs` (as defined in TypeScript.ts).  
+Examples on how to read your book are included in node_ui and web_ui files.
+Create a new TypeFic object modeled after the type `startingInputs` (as defined in TypeScript.ts).  
 
 Then, you can view the current state of your TypeFic object by calling its `gameState` property. 
 
@@ -39,7 +40,7 @@ By calling `read()` with an argument of type `string` from the current available
 
 ## Special Thanks  
 
-[Browserify](https://browserify.org/) was used to bundle the web ui script into bundle.js (included index.html). Special thanks to Advanced Web Machinery for showing me how to do this: [https://advancedweb.hu/getting-started-with-browserify/]  
+[Browserify](https://browserify.org/) can be used to bundle transpiled scripts into a web page interface. Special thanks to Advanced Web Machinery for showing how to use Browserify: [https://advancedweb.hu/getting-started-with-browserify/]  
 
 ## License  
 
