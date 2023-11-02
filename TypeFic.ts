@@ -46,7 +46,7 @@ export class TypeFic {
       gameOver: false,
       currentVariables: {}
     };
-    if ('bookVariables' in Object.keys(this.gameState.currentBook)) {
+    if ('bookVariables' in this.gameState.currentBook) {
       for (const variable in this.gameState.currentBook.bookVariables) {
         this.gameState.currentVariables[variable] = this.gameState.currentBook.bookVariables[variable];
       }
