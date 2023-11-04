@@ -63,12 +63,12 @@ export class TypeFic {
       return output;
     }
     const oldChapter = this.gameState.currentBook.bookChapters[this.gameState.currentChapter];
-    const oldChapterChoicePageIndex: number = oldChapter.chapterPages.length;
+    const oldChapterChoicePageIndex: number = oldChapter.chapterPages.length - 1;
     let oldChoices: choiceGroup;
     let oldPage: string | ((currentState: state) => string);
     const changingChapter: boolean = this.gameState.currentPageIndex == oldChapterChoicePageIndex
     if (changingChapter) {
-      oldPage = oldChapter.chapterPages[oldChapterChoicePageIndex - 1];
+      oldPage = oldChapter.chapterPages[oldChapterChoicePageIndex];
       oldChoices = oldChapter.chapterEndingChoices;
     }
     else {
